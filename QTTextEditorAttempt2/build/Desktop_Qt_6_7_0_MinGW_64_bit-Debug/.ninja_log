@@ -1,0 +1,15 @@
+# ninja log v5
+1	505	7355179860814464	QTTextEditorAttempt2_autogen/timestamp	62f8074ae5c8462b
+1	505	7355179860814464	QTTextEditorAttempt2_autogen/mocs_compilation.cpp	62f8074ae5c8462b
+1	505	7355179860814464	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt2/QTTextEditorAttempt2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/QTTextEditorAttempt2_autogen/timestamp	62f8074ae5c8462b
+1	505	7355179860814464	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt2/QTTextEditorAttempt2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/QTTextEditorAttempt2_autogen/mocs_compilation.cpp	62f8074ae5c8462b
+506	1898	7355179875246098	CMakeFiles/QTTextEditorAttempt2.dir/QTTextEditorAttempt2_autogen/mocs_compilation.cpp.obj	9e14166ef54b4a31
+510	1943	7355179875696101	CMakeFiles/QTTextEditorAttempt2.dir/main.cpp.obj	39f469b93401dac
+508	2067	7355179876942806	CMakeFiles/QTTextEditorAttempt2.dir/mainwindow.cpp.obj	e4ceb9b9dd4d529a
+2067	2236	7355179878597588	QTTextEditorAttempt2.exe	cdbb9d35a8b3c205
+9	134	7355190504600461	QTTextEditorAttempt2_autogen/timestamp	62f8074ae5c8462b
+9	134	7355190504600461	QTTextEditorAttempt2_autogen/mocs_compilation.cpp	62f8074ae5c8462b
+9	134	7355190504600461	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt2/QTTextEditorAttempt2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/QTTextEditorAttempt2_autogen/timestamp	62f8074ae5c8462b
+9	134	7355190504600461	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt2/QTTextEditorAttempt2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/QTTextEditorAttempt2_autogen/mocs_compilation.cpp	62f8074ae5c8462b
+149	1576	7355190519000475	CMakeFiles/QTTextEditorAttempt2.dir/mainwindow.cpp.obj	e4ceb9b9dd4d529a
+1576	1707	7355190520290466	QTTextEditorAttempt2.exe	cdbb9d35a8b3c205

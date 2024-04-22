@@ -28,6 +28,11 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QPushButton *openButton;
+    QPushButton *saveButton;
+    QPushButton *boldButton;
+    QPushButton *italicButton;
+    QPushButton *underlineButton;
+    QTextEdit *textEdit;
 
 };
 #endif // MAINWINDOW_H

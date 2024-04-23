@@ -16,6 +16,8 @@
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
+#include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -29,8 +31,8 @@ public:
     QAction *actionSave_As;
     QAction *actionExit;
     QAction *actionCopy;
+    QAction *actionCut;
     QAction *actionPaste;
-    QAction *actionPaste_2;
     QAction *actionFind;
     QAction *actionReplace;
     QAction *actionZoom_In;
@@ -42,12 +44,15 @@ public:
     QAction *actionColor;
     QAction *actionFont;
     QWidget *centralwidget;
+    QTextEdit *textEdit;
     QMenuBar *menubar;
     QMenu *menuFIle;
     QMenu *menuEdit;
     QMenu *menuView;
     QMenu *menuText;
     QStatusBar *statusbar;
+    QToolBar *itemBar;
+    QToolBar *editBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -66,10 +71,10 @@ public:
         actionExit->setObjectName("actionExit");
         actionCopy = new QAction(MainWindow);
         actionCopy->setObjectName("actionCopy");
+        actionCut = new QAction(MainWindow);
+        actionCut->setObjectName("actionCut");
         actionPaste = new QAction(MainWindow);
         actionPaste->setObjectName("actionPaste");
-        actionPaste_2 = new QAction(MainWindow);
-        actionPaste_2->setObjectName("actionPaste_2");
         actionFind = new QAction(MainWindow);
         actionFind->setObjectName("actionFind");
         actionReplace = new QAction(MainWindow);
@@ -92,6 +97,9 @@ public:
         actionFont->setObjectName("actionFont");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        textEdit = new QTextEdit(centralwidget);
+        textEdit->setObjectName("textEdit");
+        textEdit->setGeometry(QRect(13, 9, 771, 531));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -108,6 +116,12 @@ public:
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);
+        itemBar = new QToolBar(MainWindow);
+        itemBar->setObjectName("itemBar");
+        MainWindow->addToolBar(Qt::ToolBarArea::TopToolBarArea, itemBar);
+        editBar = new QToolBar(MainWindow);
+        editBar->setObjectName("editBar");
+        MainWindow->addToolBar(Qt::ToolBarArea::TopToolBarArea, editBar);
 
         menubar->addAction(menuFIle->menuAction());
         menubar->addAction(menuEdit->menuAction());
@@ -121,8 +135,8 @@ public:
         menuFIle->addSeparator();
         menuFIle->addAction(actionExit);
         menuEdit->addAction(actionCopy);
+        menuEdit->addAction(actionCut);
         menuEdit->addAction(actionPaste);
-        menuEdit->addAction(actionPaste_2);
         menuEdit->addSeparator();
         menuEdit->addAction(actionFind);
         menuEdit->addAction(actionReplace);
@@ -135,6 +149,27 @@ public:
         menuText->addSeparator();
         menuText->addAction(actionColor);
         menuText->addAction(actionFont);
+        itemBar->addAction(actionNew);
+        itemBar->addAction(actionOpen);
+        itemBar->addAction(actionSave);
+        itemBar->addAction(actionSave_As);
+        itemBar->addSeparator();
+        itemBar->addAction(actionCopy);
+        itemBar->addAction(actionCut);
+        itemBar->addAction(actionPaste);
+        itemBar->addSeparator();
+        itemBar->addAction(actionFind);
+        itemBar->addAction(actionReplace);
+        itemBar->addSeparator();
+        itemBar->addAction(actionZoom_In);
+        itemBar->addAction(actionZoom_Out);
+        editBar->addAction(actionBold);
+        editBar->addAction(actionUnderline);
+        editBar->addAction(actionItallic);
+        editBar->addAction(actionStrike);
+        editBar->addSeparator();
+        editBar->addAction(actionColor);
+        editBar->addAction(actionFont);
 
         retranslateUi(MainWindow);
 
@@ -150,8 +185,8 @@ public:
         actionSave_As->setText(QCoreApplication::translate("MainWindow", "Save As", nullptr));
         actionExit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
         actionCopy->setText(QCoreApplication::translate("MainWindow", "Copy", nullptr));
-        actionPaste->setText(QCoreApplication::translate("MainWindow", "Cut", nullptr));
-        actionPaste_2->setText(QCoreApplication::translate("MainWindow", "Paste", nullptr));
+        actionCut->setText(QCoreApplication::translate("MainWindow", "Cut", nullptr));
+        actionPaste->setText(QCoreApplication::translate("MainWindow", "Paste", nullptr));
         actionFind->setText(QCoreApplication::translate("MainWindow", "Find", nullptr));
         actionReplace->setText(QCoreApplication::translate("MainWindow", "Replace", nullptr));
         actionZoom_In->setText(QCoreApplication::translate("MainWindow", "Zoom In", nullptr));
@@ -166,6 +201,8 @@ public:
         menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));
         menuView->setTitle(QCoreApplication::translate("MainWindow", "View", nullptr));
         menuText->setTitle(QCoreApplication::translate("MainWindow", "Text", nullptr));
+        itemBar->setWindowTitle(QCoreApplication::translate("MainWindow", "toolBar", nullptr));
+        editBar->setWindowTitle(QCoreApplication::translate("MainWindow", "toolBar_2", nullptr));
     } // retranslateUi
 
 };

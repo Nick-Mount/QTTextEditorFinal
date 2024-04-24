@@ -25,6 +25,8 @@ private slots:
 
     void on_actionSave_triggered();
 
+    void on_actionFind_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString fileName ="";

@@ -30,9 +30,6 @@ public:
     QAction *actionSave;
     QAction *actionSave_As;
     QAction *actionExit;
-    QAction *actionCopy;
-    QAction *actionCut;
-    QAction *actionPaste;
     QAction *actionFind;
     QAction *actionReplace;
     QAction *actionZoom_In;
@@ -69,12 +66,6 @@ public:
         actionSave_As->setObjectName("actionSave_As");
         actionExit = new QAction(MainWindow);
         actionExit->setObjectName("actionExit");
-        actionCopy = new QAction(MainWindow);
-        actionCopy->setObjectName("actionCopy");
-        actionCut = new QAction(MainWindow);
-        actionCut->setObjectName("actionCut");
-        actionPaste = new QAction(MainWindow);
-        actionPaste->setObjectName("actionPaste");
         actionFind = new QAction(MainWindow);
         actionFind->setObjectName("actionFind");
         actionReplace = new QAction(MainWindow);
@@ -134,9 +125,6 @@ public:
         menuFIle->addAction(actionSave_As);
         menuFIle->addSeparator();
         menuFIle->addAction(actionExit);
-        menuEdit->addAction(actionCopy);
-        menuEdit->addAction(actionCut);
-        menuEdit->addAction(actionPaste);
         menuEdit->addSeparator();
         menuEdit->addAction(actionFind);
         menuEdit->addAction(actionReplace);
@@ -153,10 +141,6 @@ public:
         itemBar->addAction(actionOpen);
         itemBar->addAction(actionSave);
         itemBar->addAction(actionSave_As);
-        itemBar->addSeparator();
-        itemBar->addAction(actionCopy);
-        itemBar->addAction(actionCut);
-        itemBar->addAction(actionPaste);
         itemBar->addSeparator();
         itemBar->addAction(actionFind);
         itemBar->addAction(actionReplace);
@@ -211,9 +195,6 @@ public:
 #if QT_CONFIG(tooltip)
         actionExit->setToolTip(QCoreApplication::translate("MainWindow", "Exit the program", nullptr));
 #endif // QT_CONFIG(tooltip)
-        actionCopy->setText(QCoreApplication::translate("MainWindow", "Copy", nullptr));
-        actionCut->setText(QCoreApplication::translate("MainWindow", "Cut", nullptr));
-        actionPaste->setText(QCoreApplication::translate("MainWindow", "Paste", nullptr));
         actionFind->setText(QCoreApplication::translate("MainWindow", "Find", nullptr));
         actionReplace->setText(QCoreApplication::translate("MainWindow", "Replace", nullptr));
         actionZoom_In->setText(QCoreApplication::translate("MainWindow", "Zoom In", nullptr));

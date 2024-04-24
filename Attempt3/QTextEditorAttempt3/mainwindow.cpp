@@ -1,10 +1,12 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "finddialog.h"
 #include <QAction>
 #include <QFileDialog>
 #include <QFile>
 #include <QTextStream>
 #include <QMessageBox>
+#include <QDialog>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -72,5 +74,12 @@ void MainWindow::on_actionSave_triggered()
     }
     out << ui->textEdit->toMarkdown();
     file.close();
+}
+
+
+void MainWindow::on_actionFind_triggered()
+{
+    findDialog *dialog = new findDialog(this);
+    dialog->show();
 }
 

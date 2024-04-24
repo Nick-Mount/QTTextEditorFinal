@@ -180,10 +180,37 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         actionNew->setText(QCoreApplication::translate("MainWindow", "New", nullptr));
+#if QT_CONFIG(tooltip)
+        actionNew->setToolTip(QCoreApplication::translate("MainWindow", "Create a new file.", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(shortcut)
+        actionNew->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+N", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionOpen->setText(QCoreApplication::translate("MainWindow", "Open", nullptr));
+#if QT_CONFIG(tooltip)
+        actionOpen->setToolTip(QCoreApplication::translate("MainWindow", "Open a File", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(shortcut)
+        actionOpen->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+O", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionSave->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
+#if QT_CONFIG(tooltip)
+        actionSave->setToolTip(QCoreApplication::translate("MainWindow", "Save the document", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(shortcut)
+        actionSave->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+S", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionSave_As->setText(QCoreApplication::translate("MainWindow", "Save As", nullptr));
+#if QT_CONFIG(tooltip)
+        actionSave_As->setToolTip(QCoreApplication::translate("MainWindow", "Save hte file under a new name", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(shortcut)
+        actionSave_As->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+Shift+S", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionExit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
+#if QT_CONFIG(tooltip)
+        actionExit->setToolTip(QCoreApplication::translate("MainWindow", "Exit the program", nullptr));
+#endif // QT_CONFIG(tooltip)
         actionCopy->setText(QCoreApplication::translate("MainWindow", "Copy", nullptr));
         actionCut->setText(QCoreApplication::translate("MainWindow", "Cut", nullptr));
         actionPaste->setText(QCoreApplication::translate("MainWindow", "Paste", nullptr));

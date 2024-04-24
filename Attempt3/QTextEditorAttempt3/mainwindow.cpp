@@ -20,7 +20,8 @@ MainWindow::~MainWindow()
 }
 void MainWindow::on_actionNew_triggered()
 {
-
+    ui->textEdit->setText("");
+    this->fileName = "";
 }
 
 
@@ -51,7 +52,7 @@ void MainWindow::on_actionSave_As_triggered()
                                  file.errorString());
         return;
     }
-    out << ui->textEdit->toPlainText();
+    out << ui->textEdit->toMarkdown();
     file.close();
 }
 
@@ -69,7 +70,7 @@ void MainWindow::on_actionSave_triggered()
                                  file.errorString());
         return;
     }
-    out << ui->textEdit->toPlainText();
+    out << ui->textEdit->toMarkdown();
     file.close();
 }
 

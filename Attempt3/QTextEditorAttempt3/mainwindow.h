@@ -23,8 +23,10 @@ private slots:
 
     void on_actionSave_As_triggered();
 
+    void on_actionSave_triggered();
+
 private:
     Ui::MainWindow *ui;
-    QString fileName;
+    QString fileName ="";
 };
 #endif // MAINWINDOW_H

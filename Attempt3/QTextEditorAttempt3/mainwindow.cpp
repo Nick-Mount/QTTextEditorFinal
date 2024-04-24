@@ -28,17 +28,41 @@ void MainWindow::on_actionOpen_triggered()
 {
     this->fileName = QFileDialog::getOpenFileName(this, "Open the file", "", "Text Files (*.txt *.rtf);; All Files (*)");
     QFile file(this->fileName);
+
+    if (!file.open(QIODevice::ReadOnly)) {
+        QMessageBox::information(this, tr("Unable to open file"),
+                                 file.errorString());
+        return;
+    }
     QTextStream in(&file);
     QString text = in.readAll();
-    ui->textEdit->setPlainText(text);
+    ui->textEdit->setText(text);
     file.close();
 }
 
 
 void MainWindow::on_actionSave_As_triggered()
 {
-    QString fileName = QFileDialog::getSaveFileName(this, "Save the file", "", "Text Files (*.txt *.rtf);; All Files (*)");
-    QFile file(fileName);
+    this->fileName = QFileDialog::getSaveFileName(this, "Save the file", "", "Text Files (*.txt *.rtf);; All Files (*)");
+    QFile file(this->fileName);
+    QTextStream out(&file);
+    if (!file.open(QIODevice::WriteOnly)) {
+        QMessageBox::information(this, tr("Unable to open file"),
+                                 file.errorString());
+        return;
+    }
+    out << ui->textEdit->toPlainText();
+    file.close();
+}
+
+
+void MainWindow::on_actionSave_triggered()
+{
+    if(this->fileName == ""){
+        this->fileName = QFileDialog::getSaveFileName(this, "Save the file", "", "Text Files (*.txt *.rtf);; All Files (*)");
+
+    }
+    QFile file(this->fileName);
     QTextStream out(&file);
     if (!file.open(QIODevice::WriteOnly)) {
         QMessageBox::information(this, tr("Unable to open file"),

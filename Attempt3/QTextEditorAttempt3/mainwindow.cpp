@@ -86,3 +86,23 @@ void MainWindow::on_actionFind_triggered()
 
 
 }
+
+void MainWindow::on_actionZoom_In_triggered()
+{
+    ui->textEdit->zoomIn(1);
+}
+
+
+void MainWindow::on_actionZoom_Out_triggered()
+{
+    ui->textEdit->zoomOut(1);
+}
+
+
+void MainWindow::on_actionBold_triggered()
+{
+    QTextCharFormat format;
+    format.setFontWeight(ui->textEdit->fontWeight() == QFont::Bold ? QFont::Normal : QFont::Bold);
+    ui->textEdit->mergeCurrentCharFormat(format);
+}
+

@@ -76,6 +76,7 @@ public:
         actionZoom_Out->setObjectName("actionZoom_Out");
         actionBold = new QAction(MainWindow);
         actionBold->setObjectName("actionBold");
+        actionBold->setCheckable(true);
         actionUnderline = new QAction(MainWindow);
         actionUnderline->setObjectName("actionUnderline");
         actionItallic = new QAction(MainWindow);
@@ -196,10 +197,22 @@ public:
         actionExit->setToolTip(QCoreApplication::translate("MainWindow", "Exit the program", nullptr));
 #endif // QT_CONFIG(tooltip)
         actionFind->setText(QCoreApplication::translate("MainWindow", "Find", nullptr));
+#if QT_CONFIG(shortcut)
+        actionFind->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+F", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionReplace->setText(QCoreApplication::translate("MainWindow", "Replace", nullptr));
         actionZoom_In->setText(QCoreApplication::translate("MainWindow", "Zoom In", nullptr));
+#if QT_CONFIG(shortcut)
+        actionZoom_In->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+=", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionZoom_Out->setText(QCoreApplication::translate("MainWindow", "Zoom Out", nullptr));
+#if QT_CONFIG(shortcut)
+        actionZoom_Out->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+-", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionBold->setText(QCoreApplication::translate("MainWindow", "Bold", nullptr));
+#if QT_CONFIG(shortcut)
+        actionBold->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+B", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionUnderline->setText(QCoreApplication::translate("MainWindow", "Underline", nullptr));
         actionItallic->setText(QCoreApplication::translate("MainWindow", "Itallic", nullptr));
         actionStrike->setText(QCoreApplication::translate("MainWindow", "Strike", nullptr));

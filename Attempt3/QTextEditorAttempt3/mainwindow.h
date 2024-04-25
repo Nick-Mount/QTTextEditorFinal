@@ -28,6 +28,12 @@ private slots:
 
     void on_actionFind_triggered();
 
+    void on_actionZoom_In_triggered();
+
+    void on_actionZoom_Out_triggered();
+
+    void on_actionBold_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString fileName ="";

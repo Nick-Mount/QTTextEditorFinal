@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include "finddialog.h"
 #include <QAction>
 #include <QFileDialog>
 #include <QFile>
@@ -79,7 +78,11 @@ void MainWindow::on_actionSave_triggered()
 
 void MainWindow::on_actionFind_triggered()
 {
-    findDialog *dialog = new findDialog(this);
+    ui->textEdit->moveCursor(QTextCursor::Start);
+    findDialog *dialog = new findDialog(this, ui->textEdit);
     dialog->show();
-}
 
+
+
+
+}

@@ -1,1 +1,6 @@
-Hello, I am very awesome. Wow this is super cool
+This is some text.
+
+This is some more text.
+
+I want to find some text.
+

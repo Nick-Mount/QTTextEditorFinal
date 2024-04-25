@@ -45,6 +45,7 @@ C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attem
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qglobalstatic.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qhash.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qhashfunctions.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qiodevice.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qiodevicebase.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qiterable.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qiterator.h
@@ -112,6 +113,7 @@ C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attem
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qtversionchecks.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qtypeinfo.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qtypes.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qurl.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qutf8stringview.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qvariant.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/qvarlengtharray.h
@@ -131,22 +133,36 @@ C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attem
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qkeysequence.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpaintdevice.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpalette.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpixelformat.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpixmap.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpolygon.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qregion.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qrgb.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qrgba64.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtextcursor.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtextformat.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtextoption.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtgui-config.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiexports.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiglobal.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/QDialog
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/QTextEdit
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qdialog.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtextedit.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h
@@ -351,6 +367,7 @@ C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attem
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/QTextEditorAttempt3_autogen/moc_predefs.h
+ mdp:C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/finddialog.h
  mdp:C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/mainwindow.h
 C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/main.cpp
 C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/mainwindow.cpp
@@ -489,6 +506,7 @@ C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attem
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qkeysequence.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpaintdevice.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpalette.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpixelformat.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qpixmap.h
@@ -496,7 +514,10 @@ C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attem
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qregion.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qrgb.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qrgba64.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtextcursor.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtextformat.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtextoption.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtgui-config.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiexports.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiglobal.h
@@ -505,10 +526,13 @@ C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attem
  mdp:C:/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/QTextEdit
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qdialog.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h
+ mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtextedit.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h

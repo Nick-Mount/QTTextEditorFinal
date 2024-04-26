@@ -7,6 +7,15 @@
 #include <QMessageBox>
 #include <QDialog>
 
+#include <QtCharts/QBarSeries>
+#include <QtCharts/QBarSet>
+#include <QtCharts/QChart>
+#include <QtCharts/QChartView>
+#include <QtCharts/QBarCategoryAxis>
+#include <QtCharts/QValueAxis>
+#include <QMap>
+#include <QRegularExpression>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -28,7 +37,7 @@ void MainWindow::on_actionNew_triggered()
 
 void MainWindow::on_actionOpen_triggered()
 {
-    this->fileName = QFileDialog::getOpenFileName(this, "Open the file", "", "Text Files (*.txt *.rtf);; All Files (*)");
+    this->fileName = QFileDialog::getOpenFileName(this, "Open the file", "", "Markdown (*.md);; HTML (*.html);; Text Files (*.txt *.rtf);; All Files (*)");
     QFile file(this->fileName);
 
     if (!file.open(QIODevice::ReadOnly)) {
@@ -45,7 +54,7 @@ void MainWindow::on_actionOpen_triggered()
 
 void MainWindow::on_actionSave_As_triggered()
 {
-    this->fileName = QFileDialog::getSaveFileName(this, "Save the file", "", "Text Files (*.txt *.rtf);; All Files (*)");
+    this->fileName = QFileDialog::getSaveFileName(this, "Save the file", "", "Markdown (*.md);; HTML (*.html);; Text Files (*.txt *.rtf);; All Files (*)");
     QFile file(this->fileName);
     QTextStream out(&file);
     if (!file.open(QIODevice::WriteOnly)) {
@@ -61,7 +70,7 @@ void MainWindow::on_actionSave_As_triggered()
 void MainWindow::on_actionSave_triggered()
 {
     if(this->fileName == ""){
-        this->fileName = QFileDialog::getSaveFileName(this, "Save the file", "", "Text Files (*.txt *.rtf);; All Files (*)");
+        this->fileName = QFileDialog::getSaveFileName(this, "Save the file", "", "Markdown (*.md);; HTML (*.html);; Text Files (*.txt *.rtf);; All Files (*)");
 
     }
     QFile file(this->fileName);
@@ -105,4 +114,38 @@ void MainWindow::on_actionBold_triggered()
     format.setFontWeight(ui->textEdit->fontWeight() == QFont::Bold ? QFont::Normal : QFont::Bold);
     ui->textEdit->mergeCurrentCharFormat(format);
 }
+
+
+void MainWindow::on_actionUnderline_triggered()
+{
+    QTextCharFormat format;
+    format.setFontUnderline(!ui->textEdit->fontUnderline());
+    ui->textEdit->mergeCurrentCharFormat(format);
+}
+
+
+
+void MainWindow::on_actionItallic_triggered()
+{
+    QTextCharFormat format;
+    format.setFontItalic(!ui->textEdit->fontItalic());
+    ui->textEdit->mergeCurrentCharFormat(format);
+}
+
+
+void MainWindow::on_actionStrike_triggered()
+{
+    QTextCharFormat format;
+    format.setFontStrikeOut(!ui->textEdit->currentCharFormat().fontStrikeOut());
+    ui->textEdit->mergeCurrentCharFormat(format);
+}
+
+
+void MainWindow::on_actionAnalysis_triggered()
+{
+    QString text = ui->textEdit->toPlainText();
+    Analyize *analysis = new Analyize(text, this);
+    analysis->exec();
+}
+
 

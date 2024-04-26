@@ -44,7 +44,6 @@
     <addaction name="actionSave"/>
     <addaction name="actionSave_As"/>
     <addaction name="separator"/>
-    <addaction name="actionExit"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -52,7 +51,6 @@
     </property>
     <addaction name="separator"/>
     <addaction name="actionFind"/>
-    <addaction name="actionReplace"/>
    </widget>
    <widget class="QMenu" name="menuView">
     <property name="title">
@@ -60,6 +58,7 @@
     </property>
     <addaction name="actionZoom_In"/>
     <addaction name="actionZoom_Out"/>
+    <addaction name="actionAnalysis"/>
    </widget>
    <widget class="QMenu" name="menuText">
     <property name="title">
@@ -70,8 +69,6 @@
     <addaction name="actionItallic"/>
     <addaction name="actionStrike"/>
     <addaction name="separator"/>
-    <addaction name="actionColor"/>
-    <addaction name="actionFont"/>
    </widget>
    <addaction name="menuFIle"/>
    <addaction name="menuEdit"/>
@@ -95,7 +92,6 @@
    <addaction name="actionSave_As"/>
    <addaction name="separator"/>
    <addaction name="actionFind"/>
-   <addaction name="actionReplace"/>
    <addaction name="separator"/>
    <addaction name="actionZoom_In"/>
    <addaction name="actionZoom_Out"/>
@@ -115,8 +111,8 @@
    <addaction name="actionItallic"/>
    <addaction name="actionStrike"/>
    <addaction name="separator"/>
-   <addaction name="actionColor"/>
-   <addaction name="actionFont"/>
+   <addaction name="actionAnalysis"/>
+   <addaction name="separator"/>
   </widget>
   <action name="actionNew">
    <property name="text">
@@ -162,25 +158,12 @@
     <string>Ctrl+Shift+S</string>
    </property>
   </action>
-  <action name="actionExit">
-   <property name="text">
-    <string>Exit</string>
-   </property>
-   <property name="toolTip">
-    <string>Exit the program</string>
-   </property>
-  </action>
   <action name="actionFind">
    <property name="text">
     <string>Find</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+F</string>
-   </property>
-  </action>
-  <action name="actionReplace">
-   <property name="text">
-    <string>Replace</string>
    </property>
   </action>
   <action name="actionZoom_In">
@@ -200,9 +183,6 @@
    </property>
   </action>
   <action name="actionBold">
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
    <property name="text">
     <string>Bold</string>
    </property>
@@ -214,25 +194,29 @@
    <property name="text">
     <string>Underline</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
   </action>
   <action name="actionItallic">
    <property name="text">
     <string>Itallic</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
    </property>
   </action>
   <action name="actionStrike">
    <property name="text">
     <string>Strike</string>
    </property>
-  </action>
-  <action name="actionColor">
-   <property name="text">
-    <string>Color</string>
+   <property name="shortcut">
+    <string>Ctrl+Alt+S</string>
    </property>
   </action>
-  <action name="actionFont">
+  <action name="actionAnalysis">
    <property name="text">
-    <string>Font</string>
+    <string>Analysis</string>
    </property>
   </action>
  </widget>

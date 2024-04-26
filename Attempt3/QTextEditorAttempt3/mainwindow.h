@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "finddialog.h"
+#include "Analyize.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -33,6 +34,14 @@ private slots:
     void on_actionZoom_Out_triggered();
 
     void on_actionBold_triggered();
+
+    void on_actionUnderline_triggered();
+
+    void on_actionItallic_triggered();
+
+    void on_actionStrike_triggered();
+
+    void on_actionAnalysis_triggered();
 
 private:
     Ui::MainWindow *ui;

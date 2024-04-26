@@ -22,8 +22,12 @@ findDialog::findDialog(QWidget *parent, QTextEdit *text) :QDialog(parent){
     setWindowTitle("Find a Word");
     connect(findButton, &QPushButton::clicked, this, &findDialog::findClicked);
     //connect(findButton, &QPushButton::clicked, this, &findDialog::accept);
-
     delete findLabel;
+
+}
+
+findDialog::~findDialog(){
+
 }
 
 void findDialog::findClicked(){

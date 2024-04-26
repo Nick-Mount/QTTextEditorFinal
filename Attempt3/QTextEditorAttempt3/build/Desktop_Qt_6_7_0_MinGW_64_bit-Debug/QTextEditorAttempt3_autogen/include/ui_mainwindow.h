@@ -29,17 +29,14 @@ public:
     QAction *actionOpen;
     QAction *actionSave;
     QAction *actionSave_As;
-    QAction *actionExit;
     QAction *actionFind;
-    QAction *actionReplace;
     QAction *actionZoom_In;
     QAction *actionZoom_Out;
     QAction *actionBold;
     QAction *actionUnderline;
     QAction *actionItallic;
     QAction *actionStrike;
-    QAction *actionColor;
-    QAction *actionFont;
+    QAction *actionAnalysis;
     QWidget *centralwidget;
     QTextEdit *textEdit;
     QMenuBar *menubar;
@@ -64,29 +61,22 @@ public:
         actionSave->setObjectName("actionSave");
         actionSave_As = new QAction(MainWindow);
         actionSave_As->setObjectName("actionSave_As");
-        actionExit = new QAction(MainWindow);
-        actionExit->setObjectName("actionExit");
         actionFind = new QAction(MainWindow);
         actionFind->setObjectName("actionFind");
-        actionReplace = new QAction(MainWindow);
-        actionReplace->setObjectName("actionReplace");
         actionZoom_In = new QAction(MainWindow);
         actionZoom_In->setObjectName("actionZoom_In");
         actionZoom_Out = new QAction(MainWindow);
         actionZoom_Out->setObjectName("actionZoom_Out");
         actionBold = new QAction(MainWindow);
         actionBold->setObjectName("actionBold");
-        actionBold->setCheckable(true);
         actionUnderline = new QAction(MainWindow);
         actionUnderline->setObjectName("actionUnderline");
         actionItallic = new QAction(MainWindow);
         actionItallic->setObjectName("actionItallic");
         actionStrike = new QAction(MainWindow);
         actionStrike->setObjectName("actionStrike");
-        actionColor = new QAction(MainWindow);
-        actionColor->setObjectName("actionColor");
-        actionFont = new QAction(MainWindow);
-        actionFont->setObjectName("actionFont");
+        actionAnalysis = new QAction(MainWindow);
+        actionAnalysis->setObjectName("actionAnalysis");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         textEdit = new QTextEdit(centralwidget);
@@ -125,26 +115,22 @@ public:
         menuFIle->addAction(actionSave);
         menuFIle->addAction(actionSave_As);
         menuFIle->addSeparator();
-        menuFIle->addAction(actionExit);
         menuEdit->addSeparator();
         menuEdit->addAction(actionFind);
-        menuEdit->addAction(actionReplace);
         menuView->addAction(actionZoom_In);
         menuView->addAction(actionZoom_Out);
+        menuView->addAction(actionAnalysis);
         menuText->addAction(actionBold);
         menuText->addAction(actionUnderline);
         menuText->addAction(actionItallic);
         menuText->addAction(actionStrike);
         menuText->addSeparator();
-        menuText->addAction(actionColor);
-        menuText->addAction(actionFont);
         itemBar->addAction(actionNew);
         itemBar->addAction(actionOpen);
         itemBar->addAction(actionSave);
         itemBar->addAction(actionSave_As);
         itemBar->addSeparator();
         itemBar->addAction(actionFind);
-        itemBar->addAction(actionReplace);
         itemBar->addSeparator();
         itemBar->addAction(actionZoom_In);
         itemBar->addAction(actionZoom_Out);
@@ -153,8 +139,8 @@ public:
         editBar->addAction(actionItallic);
         editBar->addAction(actionStrike);
         editBar->addSeparator();
-        editBar->addAction(actionColor);
-        editBar->addAction(actionFont);
+        editBar->addAction(actionAnalysis);
+        editBar->addSeparator();
 
         retranslateUi(MainWindow);
 
@@ -192,15 +178,10 @@ public:
 #if QT_CONFIG(shortcut)
         actionSave_As->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+Shift+S", nullptr));
 #endif // QT_CONFIG(shortcut)
-        actionExit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
-#if QT_CONFIG(tooltip)
-        actionExit->setToolTip(QCoreApplication::translate("MainWindow", "Exit the program", nullptr));
-#endif // QT_CONFIG(tooltip)
         actionFind->setText(QCoreApplication::translate("MainWindow", "Find", nullptr));
 #if QT_CONFIG(shortcut)
         actionFind->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+F", nullptr));
 #endif // QT_CONFIG(shortcut)
-        actionReplace->setText(QCoreApplication::translate("MainWindow", "Replace", nullptr));
         actionZoom_In->setText(QCoreApplication::translate("MainWindow", "Zoom In", nullptr));
 #if QT_CONFIG(shortcut)
         actionZoom_In->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+=", nullptr));
@@ -214,10 +195,18 @@ public:
         actionBold->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+B", nullptr));
 #endif // QT_CONFIG(shortcut)
         actionUnderline->setText(QCoreApplication::translate("MainWindow", "Underline", nullptr));
+#if QT_CONFIG(shortcut)
+        actionUnderline->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+U", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionItallic->setText(QCoreApplication::translate("MainWindow", "Itallic", nullptr));
+#if QT_CONFIG(shortcut)
+        actionItallic->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+I", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionStrike->setText(QCoreApplication::translate("MainWindow", "Strike", nullptr));
-        actionColor->setText(QCoreApplication::translate("MainWindow", "Color", nullptr));
-        actionFont->setText(QCoreApplication::translate("MainWindow", "Font", nullptr));
+#if QT_CONFIG(shortcut)
+        actionStrike->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+Alt+S", nullptr));
+#endif // QT_CONFIG(shortcut)
+        actionAnalysis->setText(QCoreApplication::translate("MainWindow", "Analysis", nullptr));
         menuFIle->setTitle(QCoreApplication::translate("MainWindow", "FIle", nullptr));
         menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));
         menuView->setTitle(QCoreApplication::translate("MainWindow", "View", nullptr));

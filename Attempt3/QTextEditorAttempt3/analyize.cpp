@@ -9,11 +9,15 @@
 Analyize::Analyize(const QString &text, QWidget *parent) : QDialog(parent) {
     setWindowTitle("Letter Frequency Analysis");
     createChart(text);
+}
+
+void Analyize::displayChart(){
     QChartView *chartView = new QChartView(chart, this);
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->addWidget(chartView);
     setLayout(layout);
     resize(720, 720);
+
 }
 
 void Analyize::createChart(const QString &text) {
@@ -23,14 +27,12 @@ void Analyize::createChart(const QString &text) {
             freqMap[ch]++;
         }
     }
-
     QBarSet *set = new QBarSet("Letters");
     QStringList categories;
     for (char ch = 'a'; ch <= 'z'; ++ch) {
         categories << QString(ch);
         *set << freqMap[ch];
     }
-
     QBarSeries *series = new QBarSeries();
     series->append(set);
 
@@ -49,3 +51,5 @@ void Analyize::createChart(const QString &text) {
     chart->addAxis(axisY, Qt::AlignLeft);
     series->attachAxis(axisY);
 }
+
+

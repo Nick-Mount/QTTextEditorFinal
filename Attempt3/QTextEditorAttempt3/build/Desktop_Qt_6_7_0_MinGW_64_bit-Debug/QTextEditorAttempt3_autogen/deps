@@ -1168,18 +1168,20 @@ QTextEditorAttempt3_autogen/timestamp: \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/CMakeLists.txt \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/analyize.cpp \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/analyize.h \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/QTextEditorAttempt3_autogen/moc_predefs.h \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/finddialog.cpp \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/finddialog.h \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/main.cpp \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/mainwindow.cpp \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/mainwindow.h \
-	C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/mainwindow.ui \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/CMakeLists.txt \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/analyize.cpp \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/analyize.h \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/analyze2.cpp \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/analyze2.h \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/QTextEditorAttempt3_autogen/moc_predefs.h \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/finddialog.cpp \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/finddialog.h \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/main.cpp \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/mainwindow.cpp \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/mainwindow.h \
+	C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/mainwindow.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

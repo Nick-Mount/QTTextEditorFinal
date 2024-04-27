@@ -6,6 +6,7 @@
 #include <QTextStream>
 #include <QMessageBox>
 #include <QDialog>
+#include "analyze2.h"
 
 #include <QtCharts/QBarSeries>
 #include <QtCharts/QBarSet>
@@ -37,7 +38,7 @@ void MainWindow::on_actionNew_triggered()
 
 void MainWindow::on_actionOpen_triggered()
 {
-    this->fileName = QFileDialog::getOpenFileName(this, "Open the file", "", "Markdown (*.md);; HTML (*.html);; Text Files (*.txt *.rtf);; All Files (*)");
+    this->fileName = QFileDialog::getOpenFileName(this, "Open the file", "", "HTML (*.html);; Markdown (*.md);; Text Files (*.txt *.rtf);; All Files (*)");
     QFile file(this->fileName);
 
     if (!file.open(QIODevice::ReadOnly)) {
@@ -54,7 +55,7 @@ void MainWindow::on_actionOpen_triggered()
 
 void MainWindow::on_actionSave_As_triggered()
 {
-    this->fileName = QFileDialog::getSaveFileName(this, "Save the file", "", "Markdown (*.md);; HTML (*.html);; Text Files (*.txt *.rtf);; All Files (*)");
+    this->fileName = QFileDialog::getSaveFileName(this, "Save the file", "", "HTML (*.html);; Markdown (*.md);; Text Files (*.txt *.rtf);; All Files (*)");
     QFile file(this->fileName);
     QTextStream out(&file);
     if (!file.open(QIODevice::WriteOnly)) {
@@ -62,7 +63,7 @@ void MainWindow::on_actionSave_As_triggered()
                                  file.errorString());
         return;
     }
-    out << ui->textEdit->toMarkdown();
+    out << ui->textEdit->toHtml();
     file.close();
 }
 
@@ -70,7 +71,7 @@ void MainWindow::on_actionSave_As_triggered()
 void MainWindow::on_actionSave_triggered()
 {
     if(this->fileName == ""){
-        this->fileName = QFileDialog::getSaveFileName(this, "Save the file", "", "Markdown (*.md);; HTML (*.html);; Text Files (*.txt *.rtf);; All Files (*)");
+        this->fileName = QFileDialog::getSaveFileName(this, "Save the file", "", "HTML (*.html);; Markdown (*.md);; Text Files (*.txt *.rtf);; All Files (*)");
 
     }
     QFile file(this->fileName);
@@ -80,7 +81,7 @@ void MainWindow::on_actionSave_triggered()
                                  file.errorString());
         return;
     }
-    out << ui->textEdit->toMarkdown();
+    out << ui->textEdit->toHtml();
     file.close();
 }
 
@@ -145,7 +146,19 @@ void MainWindow::on_actionAnalysis_triggered()
 {
     QString text = ui->textEdit->toPlainText();
     Analyize *analysis = new Analyize(text, this);
+    analysis->displayChart();
     analysis->exec();
+
 }
 
+
+
+void MainWindow::on_actionAnalysis_2_triggered()
+{
+    QString text = ui->textEdit->toPlainText();
+    analyze2 *analysis = new analyze2(text, this);
+    analysis->displayChart();
+    analysis->exec();
+    delete analysis;
+}
 

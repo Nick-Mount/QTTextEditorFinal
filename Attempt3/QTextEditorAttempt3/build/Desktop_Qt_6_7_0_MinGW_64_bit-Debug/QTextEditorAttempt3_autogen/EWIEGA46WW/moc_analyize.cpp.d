@@ -1,5 +1,5 @@
-C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/QTextEditorAttempt3_autogen/EWIEGA46WW/moc_analyize.cpp: C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/analyize.h \
-  C:/Users/nicho/Documents/QTProjects/QTTextEditorAttempt4/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/QTextEditorAttempt3_autogen/moc_predefs.h \
+C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/QTextEditorAttempt3_autogen/EWIEGA46WW/moc_analyize.cpp: C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/analyize.h \
+  C:/Users/nicho/Documents/GitHub/QTTextEditorFinal/Attempt3/QTextEditorAttempt3/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/QTextEditorAttempt3_autogen/moc_predefs.h \
   C:/Qt/6.7.0/mingw_64/include/QtCharts/QAbstractAxis \
   C:/Qt/6.7.0/mingw_64/include/QtCharts/QAbstractBarSeries \
   C:/Qt/6.7.0/mingw_64/include/QtCharts/QAbstractSeries \

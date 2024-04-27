@@ -37,6 +37,7 @@ public:
     QAction *actionItallic;
     QAction *actionStrike;
     QAction *actionAnalysis;
+    QAction *actionAnalysis_2;
     QWidget *centralwidget;
     QTextEdit *textEdit;
     QMenuBar *menubar;
@@ -52,7 +53,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(800, 600);
+        MainWindow->resize(836, 662);
         actionNew = new QAction(MainWindow);
         actionNew->setObjectName("actionNew");
         actionOpen = new QAction(MainWindow);
@@ -77,6 +78,8 @@ public:
         actionStrike->setObjectName("actionStrike");
         actionAnalysis = new QAction(MainWindow);
         actionAnalysis->setObjectName("actionAnalysis");
+        actionAnalysis_2 = new QAction(MainWindow);
+        actionAnalysis_2->setObjectName("actionAnalysis_2");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         textEdit = new QTextEdit(centralwidget);
@@ -85,7 +88,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menubar->setGeometry(QRect(0, 0, 836, 25));
         menuFIle = new QMenu(menubar);
         menuFIle->setObjectName("menuFIle");
         menuEdit = new QMenu(menubar);
@@ -120,6 +123,7 @@ public:
         menuView->addAction(actionZoom_In);
         menuView->addAction(actionZoom_Out);
         menuView->addAction(actionAnalysis);
+        menuView->addAction(actionAnalysis_2);
         menuText->addAction(actionBold);
         menuText->addAction(actionUnderline);
         menuText->addAction(actionItallic);
@@ -140,6 +144,7 @@ public:
         editBar->addAction(actionStrike);
         editBar->addSeparator();
         editBar->addAction(actionAnalysis);
+        editBar->addAction(actionAnalysis_2);
         editBar->addSeparator();
 
         retranslateUi(MainWindow);
@@ -207,6 +212,7 @@ public:
         actionStrike->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+Alt+S", nullptr));
 #endif // QT_CONFIG(shortcut)
         actionAnalysis->setText(QCoreApplication::translate("MainWindow", "Analysis", nullptr));
+        actionAnalysis_2->setText(QCoreApplication::translate("MainWindow", "Analysis 2", nullptr));
         menuFIle->setTitle(QCoreApplication::translate("MainWindow", "FIle", nullptr));
         menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));
         menuView->setTitle(QCoreApplication::translate("MainWindow", "View", nullptr));

@@ -43,6 +43,8 @@ private slots:
 
     void on_actionAnalysis_triggered();
 
+    void on_actionAnalysis_2_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString fileName ="";
